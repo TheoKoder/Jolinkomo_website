@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jolimkomowebsite:
+    image: jolimkomowebsite
+    build:
+      context: .
+      dockerfile: ./Dockerfile

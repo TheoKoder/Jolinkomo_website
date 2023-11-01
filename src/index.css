@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@300&family=Poppins:wght@500&family=Roboto:wght@100&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.c-div {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Automatically adjust the height based on content */
+    background: transparent;
+    cursor: pointer;
+}
+
+.c-div:hover{
+    background-size: 11px;
+    align-content: flex-start;
+    border-radius: 0dvi;
+}
+
+/* Default behavior for small devices */
+/*@media screen and (max-width: 768px) {
+    .bg-scroll {
+      background-attachment: fixed;
+    }
+  }*/
+
+  /* Scroll behavior for medium devices and larger */
+  @media screen and (min-width: 769px) {
+    .bg-scroll {
+      background-attachment: scroll;
+    }
+  }
+
+  html{
+    behavior: smooth;
+  }
+
+.hero {
+    background-color: var(#0D2436);
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero:before {
+    content: '';
+    background: url('./assets/HeroImage.jpg') no-repeat center center/cover;
+    border-radius: 0.5rem/* 8px */;
+    height: 95vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: -41px;
+    z-index: -1;
+}
+
+.hero .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero .content p:first-child {
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.hero .content p:nth-child(2) {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.hero .content p:nth-child(3) {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.hero .content p:nth-child(4) {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.hero .content p:nth-child(5) {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+@media screen and (max-width:640px) {
+    .hero .content {
+        max-width: 640px;
+    }
+    .hero .content p:nth-child(3) {
+        font-size: 2.2rem;
+    }
+
+    .hero .content p:nth-child(4) {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero .content {
+        max-width: 768px;
+    }
+    .hero .content p:nth-child(3) {
+        font-size: 3.2rem;
+    }
+
+    .hero .content p:nth-child(4) {
+        font-size: 2.1rem;
+    }
+}
+@media screen and(min-width: 1024px) {
+    .hero .content {
+        max-width: 1024px;
+    }
+    .hero .content p:nth-child(3) {
+        font-size: 4.4rem;
+    }
+
+    .hero .content p:nth-child(4) {
+        font-size: 2.8rem;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .hero .content {
+        max-width: 1280px;
+    }
+    .hero .content p:nth-child(3) {
+        font-size: 4.9rem;
+    }
+
+    .hero .content p:nth-child(4) {
+        font-size: 2.8rem;
+    }
+}
+@media  screen and(min-width: 1536px) {
+    .hero .content {
+        max-width: 1536px;
+    }
+    .hero .content p:nth-child(3) {
+        font-size: 5.2rem;
+    }
+
+    .hero .content p:nth-child(4) {
+        font-size: 3.6rem;
+    }
+}
+/*Media Query for Contacts Section*/
+
+/* For small to large devices */
+@media screen and (min-width: 640px) {
+    .c-div {
+      max-width: 640px; /* Adjust width on small to large screens */
+    }
+    .c-div{
+        width: 60%;
+        height: 300px;
+    }
+    .c-div:hover {
+      background-size: 11px;
+      /* Other styles as needed for hover */
+    }
+  }
+  
